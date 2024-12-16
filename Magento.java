@@ -27,9 +27,9 @@ public class Magento {
 	            createAccountLink.click();
 
 	            // Step 3: Fill out the registration form
-	           wait.until(ExpectedConditions.presenceOfElementLocated(By.id("firstname"))).sendKeys("Jhonny");
+	           wait.until(ExpectedConditions.presenceOfElementLocated(By.id("firstname"))).sendKeys("Jhon");
 	           driver.findElement(By.id("lastname")).sendKeys("Doe");
-	            driver.findElement(By.id("email_address")).sendKeys("Johnnydoe@gmail.com");
+	            driver.findElement(By.id("email_address")).sendKeys("Johndoe@gmail.com");
 	            driver.findElement(By.id("password")).sendKeys("Password123!");
 	            driver.findElement(By.id("password-confirmation")).sendKeys("Password123!");
 
@@ -47,7 +47,7 @@ public class Magento {
 	                ExpectedConditions.elementToBeClickable(By.linkText("Sign In"))
 	            );
 	            signInLink.click();
-	            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("Johnnydoe@gmail.com");
+	            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("Johndoe@gmail.com");
 	            driver.findElement(By.id("pass")).sendKeys("Password123!");
 	            driver.findElement(By.id("send2")).click();
                 Thread.sleep(5000);

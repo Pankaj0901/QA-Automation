@@ -27,7 +27,7 @@ public class Magento {
 	            createAccountLink.click();
 
 	            // Step 3: Fill out the registration form
-	           wait.until(ExpectedConditions.presenceOfElementLocated(By.id("firstname"))).sendKeys("Jhon");
+	           wait.until(ExpectedConditions.presenceOfElementLocated(By.id("firstname"))).sendKeys("Clarke");
 	           driver.findElement(By.id("lastname")).sendKeys("Doe");
 	            driver.findElement(By.id("email_address")).sendKeys("Johndoe@gmail.com");
 	            driver.findElement(By.id("password")).sendKeys("Password123!");
